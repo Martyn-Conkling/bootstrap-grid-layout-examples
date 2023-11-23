@@ -1,6 +1,9 @@
 :root{
-    --stagger-delay: 200ms;
+    --stagger-delay: 50ms;
     --static-box-width: 20vh;
+    --example-green: rgb(36,243,147);
+    --purple: rgb(57, 22, 145);
+
 }
 
 
@@ -20,14 +23,16 @@
     }
 }
 
-.card {
-    background-color: rgb(36,243,147);
-    animation: cardEntrance 700ms ease-out;
+.my-card {
+    background-color: rgb(57, 22, 145);
+    animation: cardEntrance 500ms ease-out;
     animation-fill-mode: backwards;
     height: 20vh;
     width: 100% ;
+    border-radius: 15px;
 
 }
+
 .big-card{
    
     height: 45vh;
@@ -47,14 +52,8 @@
 }
 
 
-#c1{
-    animation-delay: calc(1 * var(--stagger-delay));
-}
-#c2{
-    animation-delay: calc(2 * var(--stagger-delay));
-
-    
-}
+#c1{animation-delay: calc(1 * var(--stagger-delay));}
+#c2{animation-delay: calc(2 * var(--stagger-delay));}
 #c3{animation-delay: calc(3 * var(--stagger-delay));}
 #c4{animation-delay: calc(4 * var(--stagger-delay));}
 #c5{animation-delay: calc(5 * var(--stagger-delay));}

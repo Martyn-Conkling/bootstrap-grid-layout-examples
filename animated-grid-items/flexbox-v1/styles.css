@@ -1,0 +1,77 @@
+body{
+    margin: 0;
+}
+/* This design has 1.6 vh of spacing
+and 1.6 vw of spacing between all cards and the edge of the screen */
+
+@keyframes cardEntrance {
+    from {
+        opacity:0;
+        transform: scale(0.3);
+        filter: hue-rotate(180deg);
+    }
+    to {
+        opacity:1;
+        transform: scale(1);
+        filter: hue-rotate(0deg);
+    }
+}
+
+
+.container{
+    display: flex;
+    flex-direction: row;
+   
+
+    align-items: stretch;
+
+    height: 100vh;
+    width: 100vw;
+
+
+}
+.center-col{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-evenly;
+
+    width: 63.6vw;
+
+}
+
+.side-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 18.2vw
+}
+
+
+
+.my-card{
+    background-color: rgb(57, 22, 145);
+    animation: cardEntrance 500ms ease-out;
+    animation-fill-mode: backwards;
+    border-radius: 5px;
+}
+
+
+.small-card{
+    height: 23vh;
+    width: 15vw;
+}
+
+.ms-card{
+    height: 23vh;
+    width: 31vw ;
+
+}
+.big-card{
+    width: 63.6vw;
+    height: 47.6vh;
+
+}
