@@ -1,21 +1,17 @@
+:root{
+    --stagger-delay: 50ms;
+    --example-green: rgb(36,243,147);
+    --purple: rgb(57, 22, 145);
+
+}
+
+
 body{
     margin: 0;
 }
 /* This design has 1.6 vh of spacing
 and 1.6 vw of spacing between all cards and the edge of the screen */
 
-@keyframes cardEntrance {
-    from {
-        opacity:0;
-        transform: scale(0.3);
-        filter: hue-rotate(180deg);
-    }
-    to {
-        opacity:1;
-        transform: scale(1);
-        filter: hue-rotate(0deg);
-    }
-}
 
 
 .container{
@@ -51,6 +47,18 @@ and 1.6 vw of spacing between all cards and the edge of the screen */
 }
 
 
+@keyframes cardEntrance {
+    from {
+        opacity:0;
+        transform: scale(0.3);
+        filter: hue-rotate(180deg);
+    }
+    to {
+        opacity:1;
+        transform: scale(1);
+        filter: hue-rotate(0deg);
+    }
+}
 
 .my-card{
     background-color: rgb(57, 22, 145);
@@ -75,3 +83,16 @@ and 1.6 vw of spacing between all cards and the edge of the screen */
     height: 47.6vh;
 
 }
+#c1{animation-delay: calc(1 * var(--stagger-delay));}
+#c2{animation-delay: calc(2 * var(--stagger-delay));}
+#c3{animation-delay: calc(3 * var(--stagger-delay));}
+#c4{animation-delay: calc(4 * var(--stagger-delay));}
+#c5{animation-delay: calc(5 * var(--stagger-delay));}
+#c6{animation-delay: calc(6 * var(--stagger-delay));}
+#c7{animation-delay: calc(7 * var(--stagger-delay));}
+#c8{animation-delay: calc(8 * var(--stagger-delay));}
+#c9{animation-delay: calc(9 * var(--stagger-delay));}
+#c10{animation-delay: calc(10 * var(--stagger-delay));}
+#c11{animation-delay: calc(11 * var(--stagger-delay));}
+#c12{animation-delay: calc(12 * var(--stagger-delay));}
+#c13{animation-delay: calc(13 * var(--stagger-delay));}
