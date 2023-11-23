@@ -1,0 +1,68 @@
+:root{
+    --stagger-delay: 200ms;
+    --static-box-width: 20vh;
+}
+
+
+
+
+
+@keyframes cardEntrance {
+    from {
+        opacity:0;
+        transform: scale(0.3);
+        filter: hue-rotate(180deg);
+    }
+    to {
+        opacity:1;
+        transform: scale(1);
+        filter: hue-rotate(0deg);
+    }
+}
+
+.card {
+    background-color: rgb(36,243,147);
+    animation: cardEntrance 700ms ease-out;
+    animation-fill-mode: backwards;
+    height: 20vh;
+    width: 100% ;
+
+}
+.big-card{
+   
+    height: 45vh;
+
+
+}
+
+
+.row-1{
+    height: 25vh;
+}
+.row-2{
+    height: 50vh;
+}
+.row-3{
+    height: 25vh;
+}
+
+
+#c1{
+    animation-delay: calc(1 * var(--stagger-delay));
+}
+#c2{
+    animation-delay: calc(2 * var(--stagger-delay));
+
+    
+}
+#c3{animation-delay: calc(3 * var(--stagger-delay));}
+#c4{animation-delay: calc(4 * var(--stagger-delay));}
+#c5{animation-delay: calc(5 * var(--stagger-delay));}
+#c6{animation-delay: calc(6 * var(--stagger-delay));}
+#c7{animation-delay: calc(7 * var(--stagger-delay));}
+#c8{animation-delay: calc(8 * var(--stagger-delay));}
+#c9{animation-delay: calc(9 * var(--stagger-delay));}
+#c10{animation-delay: calc(10 * var(--stagger-delay));}
+#c11{animation-delay: calc(11 * var(--stagger-delay));}
+#c12{animation-delay: calc(12 * var(--stagger-delay));}
+#c13{animation-delay: calc(13 * var(--stagger-delay));}

@@ -1,0 +1,35 @@
+
+.example-container{
+    min-height: 100vh;
+    border: 5px solid green;
+    box-sizing: border-box;
+    
+
+}
+
+.my-row{
+    min-height: calc(100vh - 41px);
+}
+
+.my-col{
+    border: 1px solid purple;
+    box-sizing: border-box ;
+    
+}
+
+.top-bar{
+    width:100%;
+    height:36px;
+    background-color: rgb(92, 92, 168);
+    
+}
+
+.left-nav{
+    
+}
+
+.footer-section{
+    min-height: 200px;
+
+}
+
