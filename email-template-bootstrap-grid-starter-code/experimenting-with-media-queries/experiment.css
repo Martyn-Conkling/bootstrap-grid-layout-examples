@@ -104,6 +104,20 @@ Also I could use SCSS , which is a pre-processor to write all of these media-que
     }
 } */
 
+/* Better to do this with SCSS instead like so 
+
+@for $i from 59 through 109 {
+  $min-height: $i * 10 + 1;
+  $max-height: $i * 10 + 10;
+  $calc-height: $i * 10 - 5;
+
+  @media (min-height: #{$min-height}px) and (max-height: #{$max-height}px) {
+    .responsive-height-y-scroll {
+      height: calc(#{$calc-height}px - var(--height-adjust-for-margin-or-padding));
+    }
+  }
+}*/
+
 @media(min-height: 851px) and (max-height: 860px){
     .responsive-height-y-scroll{
         height: calc(845px - var(--height-adjust-for-margin-or-padding));
