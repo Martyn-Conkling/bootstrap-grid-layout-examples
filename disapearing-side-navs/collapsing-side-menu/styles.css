@@ -8,8 +8,9 @@ is => 768px */
         when my screen is at a medium breakpoint
         this is so my nav can be collapsed when the screen is smaller  */
         display: block!important;
+        border: 1px solid black;
     }
-    }
+}
     
     #search-bar{
         position: relative;
