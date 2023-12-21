@@ -52,42 +52,12 @@ body{
 
 
 /* xs to less than sm breakpoint */
-@media( width < 576px){
-    .email-list{
-        height: 85vh;
-    }
-    .write-email-section{
-        height: 85vh;
-    }
-    .email-col{
-        overflow-y: auto;
-    }
-}
+
 
 /* sm to less than md breakpoint */
-@media (576px <= width <768px){
 
-    .email-list{
-        height: 45vh;
-        overflow-y: scroll;
-    }
-    .write-email-section{
-        height: 54vh;
-        overflow-y: auto;
-    }
-
-}
 /* md to less than lg breakpoint */
-@media(768px <= width <992px){
-    .email-list{
-        height: 45vh;
-        overflow-y: scroll;
-    }
-    .write-email-section{
-        height: 54vh;
-        overflow-y: auto;
-    }
-}
+
 /* lg breakpoint and larger */
 @media(992px <= width){
     .email-list{
@@ -99,4 +69,40 @@ body{
         overflow-y: auto;
     }
 
+}
+
+@media(768px <= width <992px){
+    .email-list{
+        height: 45vh;
+        overflow-y: scroll;
+    }
+    .write-email-section{
+        height: 54vh;
+        overflow-y: auto;
+    }
+}
+
+
+@media (576px <= width <768px){
+
+    .email-list{
+        height: 45vh;
+        overflow-y: scroll;
+    }
+    .write-email-section{
+        height: 54vh;
+        overflow-y: auto;
+    }
+}
+
+@media( width < 576px){
+    .email-list{
+        height: 85vh;
+    }
+    .write-email-section{
+        height: 85vh;
+    }
+    .email-col{
+        overflow-y: auto;
+    }
 }

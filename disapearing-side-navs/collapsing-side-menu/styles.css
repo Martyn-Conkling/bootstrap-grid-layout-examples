@@ -1,0 +1,22 @@
+/* this media querry is for the md screen size
+for bootstrap grid.  basically when the screen
+is => 768px */
+@media (min-width: 768px){
+
+    .show-and-hide-nav {
+        /* This makes my collapse nav show up
+        when my screen is at a medium breakpoint
+        this is so my nav can be collapsed when the screen is smaller  */
+        display: block!important;
+        border: 1px solid black;
+    }
+}
+    
+    #search-bar{
+        position: relative;
+        width: calc(100% - 50px);
+        
+    }
+    .nav-column{
+        justify-content: right;
+    }
